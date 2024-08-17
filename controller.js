@@ -13,6 +13,26 @@ class LibroController {
       }
     }
 
+    // Obtener un libro por su ID
+  async getOne(req, res) {
+    const { id } = req.params;
+    try {
+      const [result] = await pool.query('SELECT * FROM libros WHERE id = ?', [
+        id,
+      ]);
+
+      if (result.length === 0) {
+        // Si no se encuentra el libro, devolver un error
+        res.status(404).json({ message: "Libro no encontrado" });
+      } else {
+        res.json(result[0]);
+      }
+    } catch (error) {
+      // Manejo de error 
+      res.status(500).json({ message: "Error al obtener el libro", error });
+    }
+  }
+
     // Agregar un nuevo libro
   async add(req, res) {
     const libro = req.body;
