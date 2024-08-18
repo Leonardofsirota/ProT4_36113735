@@ -76,7 +76,7 @@ async getOne(req, res) {
       );
 
       if (result.length === 0) {
-        // Si no se encuentra el libro, devolver un error 404
+        // Si no se encuentra el libro, devolver un error 
         return res.status(404).json({ message: "Libro no encontrado" });
       }
 
@@ -92,7 +92,7 @@ async getOne(req, res) {
       if (deleteResult.affectedRows === 0) {
         res.status(404).json({ message: "No se pudo eliminar el libro" });
       } else {
-        res.json({ "Registros eliminados": deleteResult.affectedRows });
+        res.json({ "Libro eliminado": deleteResult.affectedRows });
       }
     } catch (error) {
       // Manejar cualquier error que ocurra durante la eliminación

@@ -42,14 +42,14 @@ CREATE TABLE `libros` (
 
 INSERT INTO `libros` (`id`, `nombre`, `autor`, `categoria`, `ano-publicacion`, `ISBN`) VALUES
 (1, 'El lobo estepario', 'Hermann Hesse', 'Novela', '1927-01-01', '9783518031599'),
-(3, 'Vigilar y castigar', 'Michel Foucault', 'Ensayo', '1975-01-01', '9780394499420'),
-(4, 'El arcoiris de gravedad', 'Thomas Pynchon', 'Novela', '1973-01-01', '9788483102237'),
-(5, 'Azul', 'Ruben Dario', 'Poesia', '1888-07-30', '9788475670638'),
-(6, 'El escarabajo de oro', 'Edgar Allan Poe', 'Cuento', '1843-01-01', '9788420733944'),
-(7, 'Matar a un ruiseñor', 'Harper Lee', 'Novela', '1960-01-01', '9780060173227'),
-(8, 'Romancero gitano', 'Federico Lorca', 'Poesia', '1928-01-01', '9788420690919'),
-(9, 'El fantasma de Canterville', 'Oscar Wilde', 'Cuento', '1887-01-01', '9780744549515'),
-(10, 'El libro rojo', 'Carl Jung', 'Ensayo ', '2009-01-01', '9780393089080');
+(2, 'Vigilar y castigar', 'Michel Foucault', 'Ensayo', '1975-01-01', '9780394499420'),
+(3, 'El arcoiris de gravedad', 'Thomas Pynchon', 'Novela', '1973-01-01', '9788483102237'),
+(4, 'Azul', 'Ruben Dario', 'Poesia', '1888-07-30', '9788475670638'),
+(5, 'El escarabajo de oro', 'Edgar Allan Poe', 'Cuento', '1843-01-01', '9788420733944'),
+(6, 'Matar a un ruiseñor', 'Harper Lee', 'Novela', '1960-01-01', '9780060173227'),
+(7, 'Romancero gitano', 'Federico Lorca', 'Poesia', '1928-01-01', '9788420690919'),
+(8, 'El fantasma de Canterville', 'Oscar Wilde', 'Cuento', '1887-01-01', '9780744549515'),
+(9, 'El libro rojo', 'Carl Jung', 'Ensayo ', '2009-01-01', '9780393089080');
 
 --
 -- Índices para tablas volcadas
